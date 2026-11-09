@@ -7,6 +7,9 @@ Lugu kahest vanast sobrast.
 
 Joe, peategelase vana sober, leiab ennast {nimi) lävel.
 {nimi) laseb ta sisse ja loogiliselt küsib miks ta külla tuli.
+Selleks, et teada saada MIKS Joe sulle külla tuli pead sa ta tobedat juttu kuulama.
+
+Loo suunda mõjutab Joe hommikusöögi valik.
 
 Intro kirjutas AI ja inimene muutis seal teksti ja loo suunda.
 Mini_games on kõik inimese poolt kirjutatud, seal pole tilkagi AI-d

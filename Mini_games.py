@@ -1,6 +1,6 @@
 from random import choice, randint
 
-def numbri_mäng():
+def numbri_mäng():      #!  Numbri äraarvamis mäng, mis tuleb kasutusse millalgi loo lõpus
     arvuti = randint(1,100)
     mängja = int(input("Vali number 1-100: "))
     while mängja != arvuti:
@@ -12,7 +12,7 @@ def numbri_mäng():
 
     return print("Arvatud!!")
 
-def kivi_paber_käärid():
+def kivi_paber_käärid():    #!  Kivi, Paber, Käärid, mis originaalselt oli lõpmatus tsüklis kuniks mõistsin et see ei sobiks mänguga kokku.
     arvuti_valik = ("kivi", "paber", "käärid")
     kivi = "1"
     paber = "2"
@@ -34,9 +34,9 @@ def kivi_paber_käärid():
     else:
         print(f"Joe: Mind isutab {arvuti_isu}.")
 
-    return mängja_isu
+    return arvuti_isu
 
-def Joe_toidud():
+def Joe_toidud():   #^  Toidu valikud, mis mõjutavad kuidas lugu edasi läheb peale hommikusööki
     Joe_toit = "võileib", "peekon munaga", "puder", "müsli"
     Joe_isu = choice(Joe_toit)
     if Joe_isu == "võileib":
@@ -50,17 +50,3 @@ def Joe_toidud():
  
     return Joe_isu, meenutus
 
-
-def varustus():
-    haamer = 1
-    nuga = 2
-    sai = 3
-    Coca_Cola = 4
-    labidas = 5
-    müts = 6
-    sall = 7
-    müstiline_võti = 8
-   
-    vali = input("Vali üks asi mida kaasa võtta! 1.(haamer)| 2.(nuga)| 3.(sai)| 4.(Coca-Cola)| 5.(labidas)| 6.(müts)| 7.(sall)| 8.(müstiline võti)")
-
-    return vali
