@@ -10,7 +10,7 @@ def numbri_mäng():
         elif mängja > arvuti:
             print("Liiga suur")
 
-    print("arvasid õigesti")
+    return print("Arvatud!!")
 
 def kivi_paber_käärid():
     arvuti_valik = ("kivi", "paber", "käärid")
@@ -30,11 +30,31 @@ def kivi_paber_käärid():
         mängja_isu = input("Mis toidu isu sul on?: ")
     elif mängja == "3" and arvuti == "paber":
         print(f"Võitsid")
-        mängja_isu = input("Mis toidu isu sul on?: ")  
+        mängja_isu = input("Mis toidu isu sul on?: ")   
     else:
-        print(f"Joe: Mind isutab {arvuti_isu}")
+        print(f"Joe: Mind isutab {arvuti_isu}.")
 
-def Joe_isu():
-    Joe_toit = ("võileib", "peekon munaga", "puder", "müsli")
+def Joe_toidud():
+    Joe_toit = "võileib", "peekon munaga", "puder", "müsli"
     Joe_isu = choice(Joe_toit)
-    return Joe_isu
+    if Joe_isu == "võileib":
+        meenutus = "Joe: Mhhhhhh, tuletab mulle ühte kohvikut meelde."
+    elif Joe_isu == "peekon munaga":
+        meenutus = "Joe: Täpselt nagu matkates, lapsena."
+    elif Joe_isu == "puder":
+        meenutus = "Joe: JEESUS!! See meenutab lapsepõlve vanaema juures."
+    elif Joe_isu == "müsli":
+        meenutus = "Joe: Mu lemmik kuu lõpu toit."
+ 
+    return Joe_isu, meenutus
+
+
+def varustus():
+    riistad = "haamer", "nuga", "sai", "Coca-Cola", "labidas", "müts", "sall", "müstiline võti"
+    haamer = 1, nuga = 2, sai = 3, Coca_Cola = 4, labidas = 5, müts = 6, sall = 7, müstiline_võti = 8
+    riistade_valik = [1, 2, 3, 4, 5, 6, 7, 8]
+    vali = int(input("""Vali üks asi mida kaasa võtta!
+    1.(haamer)| 2.(nuga)| 3.(sai)| 4.(Coca-Cola)| 5.(labidas)| 6.(müts)| 7.(sall)| 8.(müstiline võti)"""))
+
+    return vali
+
