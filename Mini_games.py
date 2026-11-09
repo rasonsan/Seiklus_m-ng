@@ -34,6 +34,8 @@ def kivi_paber_käärid():
     else:
         print(f"Joe: Mind isutab {arvuti_isu}.")
 
+    return mängja_isu
+
 def Joe_toidud():
     Joe_toit = "võileib", "peekon munaga", "puder", "müsli"
     Joe_isu = choice(Joe_toit)
@@ -50,11 +52,15 @@ def Joe_toidud():
 
 
 def varustus():
-    riistad = "haamer", "nuga", "sai", "Coca-Cola", "labidas", "müts", "sall", "müstiline võti"
-    haamer = 1, nuga = 2, sai = 3, Coca_Cola = 4, labidas = 5, müts = 6, sall = 7, müstiline_võti = 8
-    riistade_valik = [1, 2, 3, 4, 5, 6, 7, 8]
-    vali = int(input("""Vali üks asi mida kaasa võtta!
-    1.(haamer)| 2.(nuga)| 3.(sai)| 4.(Coca-Cola)| 5.(labidas)| 6.(müts)| 7.(sall)| 8.(müstiline võti)"""))
+    haamer = 1
+    nuga = 2
+    sai = 3
+    Coca_Cola = 4
+    labidas = 5
+    müts = 6
+    sall = 7
+    müstiline_võti = 8
+   
+    vali = input("Vali üks asi mida kaasa võtta! 1.(haamer)| 2.(nuga)| 3.(sai)| 4.(Coca-Cola)| 5.(labidas)| 6.(müts)| 7.(sall)| 8.(müstiline võti)")
 
     return vali
-
